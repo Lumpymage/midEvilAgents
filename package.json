@@ -9,6 +9,7 @@
   "author": "Phil Barr",
   "license": "ISC",
   "dependencies": {
+    "phaser": "^3.60.0",
     "typescript": "^5.1.3"
   }
 }
