@@ -1,17 +1,11 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const phaser_1 = __importDefault(require("phaser"));
-const MenuScene_1 = __importDefault(require("./scenes/MenuScene"));
-// import your game scene here, too
+import Phaser from 'phaser';
+import StartMenu from './scenes/StartMenu';
 const config = {
-    type: phaser_1.default.AUTO,
+    type: Phaser.AUTO,
     width: 800,
     height: 600,
     parent: 'phaser-example',
-    scene: [MenuScene_1.default],
+    scene: [StartMenu],
     physics: {
         default: 'arcade',
         arcade: {
@@ -19,4 +13,4 @@ const config = {
         }
     }
 };
-const game = new phaser_1.default.Game(config);
+const game = new Phaser.Game(config);
