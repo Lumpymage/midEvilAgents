@@ -1,12 +1,13 @@
 import Phaser from 'phaser';
 import StartMenu from './scenes/StartMenu';
+import MainScene from './scenes/MainScene';
 
 const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: window.innerWidth,
+    height: window.innerHeight,
     parent: 'phaser-example',
-    scene: [StartMenu], 
+    scene: [StartMenu, MainScene],
     physics: {
         default: 'arcade',
         arcade: {

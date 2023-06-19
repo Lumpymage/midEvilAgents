@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
   entry: './src/index.ts', // path to your main TypeScript file
   module: {
     rules: [
